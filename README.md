@@ -15,7 +15,7 @@ Two aspects have to be taken into consideration:
 - how do you compute the pseudo-inverse of $B = \Omega_1^T A \Omega_1$ ?
 - where should I do the rank-k approximation? On the middle term $B$ or directly on $\tilde{A}_{Nyst}$?
 
-Concerning the first question the easiest way to proceed is by applying the **Cholesky factorization** to $B$. Sometimes, the matrix $\Omega_1^T A \Omega_1$ can be rank-deficient, for instance, if $A$ or $B$ have a lower rank than $l$, which will cause a problem for obtaining a Cholesky factorization. In this case, a remedy can be to compute an SVD instead of the Cholesky factorization of $B$ ([cite](balab)).
+Concerning the first question the easiest way to proceed is by applying the **Cholesky factorization** to $B$. Sometimes, the matrix $\Omega_1^T A \Omega_1$ can be rank-deficient, for instance, if $A$ or $B$ have a lower rank than $l$, which will cause a problem for obtaining a Cholesky factorization. In this case, a remedy can be to compute an SVD instead of the Cholesky factorization of $B$ (Block subsampled randomized Hadamard transform for low-rank approximation on distributed architectures, Balabanov et al).
 
 Notice that the SVD factorization has to satisfy the property from Cholesky factorization such that the starting matrix can be expressed as the product of a lower triangular matrix and its conjugate transpose. To have this nice property, since $A$ is symmetric, the SVD coincide with the definition of eigenvalues and eigenvectors $A = U \Sigma U^T$. Then, we can observe that $A = U \sqrt{\Sigma} \sqrt{\Sigma} U^T$.
 
