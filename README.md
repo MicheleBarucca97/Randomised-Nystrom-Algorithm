@@ -1,6 +1,6 @@
 Consider a matrix $A \in \mathbb{R}^{mxn}$ symmetric and psd (positive semi-definite).
 
-For a sketching matrix $\Omega_1 \in \mathbb{R}^{nxl}$, the randomized $Nystr\"{o}m$ approximation of $A$ takes the form:
+For a sketching matrix $\Omega_1 \in \mathbb{R}^{nxl}$, the randomized Nyström approximation of $A$ takes the form:
 
 $$\tilde{A}_{Nyst} = (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A) $$
 
