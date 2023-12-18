@@ -36,7 +36,7 @@ Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 
 Then, the preferred way is to do the rank-k approximation to $\tilde{A}_{Nyst}$. The algorithm follows these steps:
 
-**Randomized Nystr\"{o}m with rank-k truncation on $\tilde{A}_{Nyst}$.**
+**Randomized Nyström with rank-k truncation on $\tilde{A}_{Nyst}$.**
 
 Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 
