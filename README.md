@@ -55,8 +55,9 @@ A small note, you can decide to compute $\hat{U_k}$ in two ways: the more stable
 
 From an algebraic point of view, the following steps have to be made:
 
-$$ (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A)$$ <br>
-$$  = C L^{-T} L^{-1} C^T $$ 
+$$ (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A)$$ 
+= $$ C L^{-T} L^{-1} C^T $$ 
+
 
 
 and that:
