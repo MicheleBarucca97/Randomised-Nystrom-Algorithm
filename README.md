@@ -85,7 +85,7 @@ $$ \Omega_1 = \sqrt{\frac{m}{l}} P H D $$
 
 The three matrices are the following:
 
-- $ D \in \mathbb{R}^{m \times m} $: diagonal matrix of independent random sign (plus or minus ones in the diagonal).
+- $$ D \in \mathbb{R}^{m \times m} $$: diagonal matrix of independent random sign (plus or minus ones in the diagonal).
 - $ H \in \mathbb{R}^{m \times m} $: normalized Walsh-Hadamard matrix.
 - $ P \in \mathbb{R}^{l \times m} $: draws $ l$ rows uniformly at random.
 
