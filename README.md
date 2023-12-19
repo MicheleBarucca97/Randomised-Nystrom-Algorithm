@@ -85,11 +85,11 @@ $$ \Omega_1 = \sqrt{\frac{m}{l}} P H D $$
 
 The three matrices are the following:
 
-- $$ D \in \mathbb{R}^{m \times m} $$: diagonal matrix of independent random sign (plus or minus ones in the diagonal).
-- $ H \in \mathbb{R}^{m \times m} $: normalized Walsh-Hadamard matrix.
-- $ P \in \mathbb{R}^{l \times m} $: draws $ l$ rows uniformly at random.
+- $D \in \mathbb{R}^{m \times m}$: diagonal matrix of independent random sign (plus or minus ones in the diagonal).
+- $H \in \mathbb{R}^{m \times m}$: normalized Walsh-Hadamard matrix.
+- $P \in \mathbb{R}^{l \times m}$: draws $l$ rows uniformly at random.
 
-In this case, $ \Omega_1 $ is an OSE(n; $ \epsilon $; $\delta $) of size $l = \textit{O}(\epsilon^{-2} (n + \log(\frac{m}{\delta})) \log(\frac{n}{\delta})) $.
+In this case, $ \Omega_1 $ is an OSE(n; $\epsilon$; $\delta$) of size $l = \textit{O}(\epsilon^{-2} (n + \log(\frac{m}{\delta})) \log(\frac{n}{\delta})) $.
 
 Regrettably, the suitability of products featuring SRHT matrices for distributed computing is limited, thereby restricting the advantages of SRHT on contemporary architectures. This limitation primarily arises from the challenge of computing products with $H $ in tensor form.
 
