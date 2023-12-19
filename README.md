@@ -69,9 +69,7 @@ From an algebraic point of view, the following steps have to be made:
 
 and that:
 
-\begin{align}
-    \hat{U}_k = Q U_k = C L^{-T} R^{-1} U_k = Z V_k \Sigma_k^{-1}
-\end{align}
+$$ \hat{U}_k = Q U_k = C L^{-T} R^{-1} U_k = Z V_k \Sigma_k^{-1}$$
 
 in this case since $\Sigma_k$ is diagonal then $\Sigma_k \Sigma_k^{-1} = I$ and the last step reduce to simply evaluate: $\tilde{A}_{Nyst} = Z V_k (Z V_k)^T$.
 
