@@ -1,4 +1,5 @@
 # Randomized Nyström algorithm
+\displaylines{x = a + b \\ y = b + c}
 
 Consider a matrix $A \in \mathbb{R}^{mxn}$ symmetric and psd (positive semi-definite).
 
