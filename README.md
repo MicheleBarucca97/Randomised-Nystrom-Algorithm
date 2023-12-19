@@ -1,3 +1,5 @@
+# Randomized Nyström algorithm
+
 Consider a matrix $A \in \mathbb{R}^{mxn}$ symmetric and psd (positive semi-definite).
 
 For a sketching matrix $\Omega_1 \in \mathbb{R}^{nxl}$, the randomized Nyström approximation of $A$ takes the form:
@@ -8,7 +10,7 @@ where $(\Omega_1^T A \Omega_1)^+$ defines the pseudo-inverse of $\Omega_1^T A \O
 
 From Equation \ref{eq:nys} you can observe that the three terms can be defined by just doing the multiplication $C = A \Omega_1$ once. Since, the middle term is given by $\Omega_1^T C$, while the third term is the transpose of the first one.
 
-So, it is important to note that the randomized Nystr\"{o}m required just **one pass** over the original data $A$.
+So, it is important to note that the randomized Nyström required just **one pass** over the original data $A$.
 
 Two aspects have to be taken into consideration:
 
