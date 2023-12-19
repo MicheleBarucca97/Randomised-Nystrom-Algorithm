@@ -93,7 +93,7 @@ In this case, $\Omega_1$ is an OSE(n; $\epsilon$; $\delta$) of size $l = \textit
 
 Regrettably, the suitability of products featuring SRHT matrices for distributed computing is limited, thereby restricting the advantages of SRHT on contemporary architectures. This limitation primarily arises from the challenge of computing products with $H$ in tensor form.
 
-This justifies the introduction of the new method block-SRHT, which attempts to distribute the workload between the various processors as $\Omega_1 = [\Omega_1^{(1)},...,\Omega_1^{(P)}]$ and:
+This justifies the introduction of the new method block-SRHT, which attempts to distribute the workload between the various processors as $\Omega_1=[\Omega_1^{(1)},...,\Omega_1^{(P)}]$ and:
 
 $$\Omega_1^{(i)} = \sqrt{\frac{m}{Pl}} \tilde{D}^{(i)} P H D^{(i)}$$
 
