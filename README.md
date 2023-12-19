@@ -54,19 +54,12 @@ Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 A small note, you can decide to compute $\hat{U_k}$ in two ways: the more stable way is to write it as $Q U_K$, while the more efficient way is to write it as $ZV_k \Sigma_k^{-1}$.
 
 From an algebraic point of view, the following steps have to be made:
-
-1. \( (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A) \)
-
-2. \( = C L^{-T} L^{-1} C^T \)
-
-3. \( = Z Z^T \) \[ \text{recall } Z = CL^{-T} \]
-
-4. \( = Q R R^T Q^T \) \[ \text{QR-factorization of } Z \]
-
-5. \( = Q U_k \Sigma_k \Sigma_k U_k^T Q^T \) \[ \text{rank-k SVD of } R \]
-
-6. \( = \hat{U}_k \Sigma_k^2 \hat{U}_k^T \)
-
+(A Ω₁)(Ω₁ᵀ A Ω₁)⁺ (Ω₁ᵀ A)
+= C L⁻ᵀ L⁻¹ Cᵀ
+= Z Zᵀ [recall Z = CL⁻ᵀ]
+= Q R Rᵀ Qᵀ [QR-factorization of Z]
+= Q Uₖ Σₖ Σₖ Uₖᵀ Qᵀ [rank-k SVD of R]
+= Ûₖ Σₖ² Ûₖᵀ
 
 and that:
 
