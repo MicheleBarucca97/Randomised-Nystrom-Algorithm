@@ -69,7 +69,7 @@ From an algebraic point of view, the following steps have to be made:
 
 and that:
 
-$$ \hat{U}_k = Q U_k = C L^{-T} R^{-1} U_k = Z V_k \Sigma_k^{-1}$$
+$$\hat{U}_k = Q U_k = C L^{-T} R^{-1} U_k = Z V_k \Sigma_k^{-1}$$
 
 in this case since $\Sigma_k$ is diagonal then $\Sigma_k \Sigma_k^{-1} = I$ and the last step reduce to simply evaluate: $\tilde{A}_{Nyst} = Z V_k (Z V_k)^T$.
 
@@ -81,7 +81,7 @@ Two sketching matrices will be used to test the algorithm. The first one is the 
 
 The second sketching matrix is the **block SRHT embeddings**. It has been derived from the sub-sampled randomized Hadamard transform matrix:
 
-$$ \Omega_1 = \sqrt{\frac{m}{l}} P H D $$
+$$\Omega_1 = \sqrt{\frac{m}{l}} P H D$$
 
 The three matrices are the following:
 
@@ -89,17 +89,17 @@ The three matrices are the following:
 - $H \in \mathbb{R}^{m \times m}$: normalized Walsh-Hadamard matrix.
 - $P \in \mathbb{R}^{l \times m}$: draws $l$ rows uniformly at random.
 
-In this case, $ \Omega_1 $ is an OSE(n; $\epsilon$; $\delta$) of size $l = \textit{O}(\epsilon^{-2} (n + \log(\frac{m}{\delta})) \log(\frac{n}{\delta})) $.
+In this case, $\Omega_1$ is an OSE(n; $\epsilon$; $\delta$) of size $l = \textit{O}(\epsilon^{-2} (n + \log(\frac{m}{\delta})) \log(\frac{n}{\delta}))$.
 
-Regrettably, the suitability of products featuring SRHT matrices for distributed computing is limited, thereby restricting the advantages of SRHT on contemporary architectures. This limitation primarily arises from the challenge of computing products with $H $ in tensor form.
+Regrettably, the suitability of products featuring SRHT matrices for distributed computing is limited, thereby restricting the advantages of SRHT on contemporary architectures. This limitation primarily arises from the challenge of computing products with $H$ in tensor form.
 
-This justifies the introduction of the new method block-SRHT, which attempts to distribute the workload between the various processors as $ \Omega_1 = [\Omega_1^{(1)},...,\Omega_1^{(P)}] $ and:
+This justifies the introduction of the new method block-SRHT, which attempts to distribute the workload between the various processors as $\Omega_1 = [\Omega_1^{(1)},...,\Omega_1^{(P)}]$ and:
 
 $$\Omega_1^{(i)} = \sqrt{\frac{m}{Pl}} \tilde{D}^{(i)} P H D^{(i)}$$
 
-Each $ \Omega_1^{(i)} $ is related to a unique sampling matrix $ R $ and different (independent from each other) diagonal matrices $ D^{(i)} $ with i.i.d.. The dimensions of the matrices are the following: $D^{(i)} \in \mathbb{R}^{m/p \times m/p} $, $ H \in \mathbb{R}^{m/p \times m/p} $, $P \in \mathbb{R}^{l \times m/p} $, and $\tilde{D}^{(i)} \in \mathbb{R}^{l \times l} $.
+Each $\Omega_1^{(i)}$ is related to a unique sampling matrix $R$ and different (independent from each other) diagonal matrices $D^{(i)}$ with i.i.d.. The dimensions of the matrices are the following: $D^{(i)} \in \mathbb{R}^{m/p \times m/p}$, $H \in \mathbb{R}^{m/p \times m/p}$, $P \in \mathbb{R}^{l \times m/p}$, and $\tilde{D}^{(i)} \in \mathbb{R}^{l \times l}$.
 
-The global $ \Omega_1 $ can be seen as:
+The global $\Omega_1$ can be seen as:
 
 \begin{align}
     \Omega_1 = \sqrt{\frac{m}{Pl}} [\tilde{D}^{(1)} ... \tilde{D}^{(P)}] 
