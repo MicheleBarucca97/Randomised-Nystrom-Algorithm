@@ -55,16 +55,17 @@ A small note, you can decide to compute $\hat{U_k}$ in two ways: the more stable
 
 From an algebraic point of view, the following steps have to be made:
 
-$ (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A)$ 
-aaaaaaaaaaaaaaa = $ C L^{-T} L^{-1} C^T $ 
+1. \( (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A) \)
 
-$$
-    = Z Z^T \qquad [recall \ Z = CL^{-T} ] \\
-    = Q R R^T Q^T  \qquad [QR-factorization \ of \ Z] \\
-    = Q U_k \Sigma_k \Sigma_k U_k^T Q^T  \qquad [rank-k \ SVD \ of \ R] \\
-    = \hat{U}_k \Sigma_k^2 \hat{U}_k^T
-$$
+2. \( = C L^{-T} L^{-1} C^T \)
 
+3. \( = Z Z^T \) \[ \text{recall } Z = CL^{-T} \]
+
+4. \( = Q R R^T Q^T \) \[ \text{QR-factorization of } Z \]
+
+5. \( = Q U_k \Sigma_k \Sigma_k U_k^T Q^T \) \[ \text{rank-k SVD of } R \]
+
+6. \( = \hat{U}_k \Sigma_k^2 \hat{U}_k^T \)
 
 
 and that:
