@@ -21,7 +21,7 @@ Concerning the first question the easiest way to proceed is by applying the **Ch
 
 Notice that the SVD factorization has to satisfy the property from Cholesky factorization such that the starting matrix can be expressed as the product of a lower triangular matrix and its conjugate transpose. To have this nice property, since $A$ is symmetric, the SVD coincide with the definition of eigenvalues and eigenvectors $A = U \Sigma U^T$. Then, we can observe that $A = U \sqrt{\Sigma} \sqrt{\Sigma} U^T$.
 
-Concerning the second question, if you do a rank-k truncation directly on $B = \Omega_1^T A \Omega_1$ you lose accuracy in the algorithm. The main idea for the Nystr\"{o}m code can be wrapped in the following algorithm:
+Concerning the second question, if you do a rank-k truncation directly on $B = \Omega_1^T A \Omega_1$ you lose accuracy in the algorithm. The main idea for the Nyström code can be wrapped in the following algorithm:
 
 **Randomized Nyström with rank-k truncation on $B$.**
 
