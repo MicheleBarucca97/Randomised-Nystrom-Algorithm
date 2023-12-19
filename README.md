@@ -101,7 +101,7 @@ Each $\Omega_1^{(i)}$ is related to a unique sampling matrix $R$ and different (
 
 The global $\Omega_1$ can be seen as:
 
-\begin{align}
+$$
     \Omega_1 = \sqrt{\frac{m}{Pl}} [\tilde{D}^{(1)} ... \tilde{D}^{(P)}] 
     \begin{bmatrix}
     P H &  &  \\
@@ -113,7 +113,7 @@ The global $\Omega_1$ can be seen as:
         & \ddots & \\ 
         &   & D^{(P)}\\
   \end{bmatrix} 
-\end{align}
+$$
 
 Notice that the $ H $ matrix maintains orthogonality because overall it appears as a block diagonal matrix. Also, the advantage of the sketching matrix written in this way is that it is easy to parallelize the matrix-matrix multiplication:
 
