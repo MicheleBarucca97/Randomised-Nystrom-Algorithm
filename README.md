@@ -1,8 +1,8 @@
-# Randomized Nyström algorithm
+# Randomised Nyström algorithm
 
 Consider a matrix $A \in \mathbb{R}^{mxn}$ symmetric and psd (positive semi-definite).
 
-For a sketching matrix $\Omega_1 \in \mathbb{R}^{nxl}$, the randomized Nyström approximation of $A$ takes the form:
+For a sketching matrix $\Omega_1 \in \mathbb{R}^{nxl}$, the randomised Nyström approximation of $A$ takes the form:
 
 $$\tilde{A}_{Nyst} = (A \Omega_1)(\Omega_1^T A \Omega_1)^+ (\Omega_1^T A) $$
 
@@ -10,7 +10,7 @@ where $(\Omega_1^T A \Omega_1)^+$ defines the pseudo-inverse of $\Omega_1^T A \O
 
 From Equation \ref{eq:nys} you can observe that the three terms can be defined by just doing the multiplication $C = A \Omega_1$ once. Since, the middle term is given by $\Omega_1^T C$, while the third term is the transpose of the first one.
 
-So, it is important to note that the randomized Nyström required just **one pass** over the original data $A$.
+So, it is important to note that the randomised Nyström required just **one pass** over the original data $A$.
 
 Two aspects have to be taken into consideration:
 
@@ -23,7 +23,7 @@ Notice that the SVD factorization has to satisfy the property from Cholesky fact
 
 Concerning the second question, if you do a rank-k truncation directly on $B = \Omega_1^T A \Omega_1$ you lose accuracy in the algorithm. The main idea for the Nyström code can be wrapped in the following algorithm:
 
-**Randomized Nyström with rank-k truncation on $B$.**
+**Randomised Nyström with rank-k truncation on $B$.**
 
 Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 
@@ -38,7 +38,7 @@ Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 
 Then, the preferred way is to do the rank-k approximation to $\tilde{A}_{Nyst}$. The algorithm follows these steps:
 
-**Randomized Nyström with rank-k truncation on $\tilde{A}_{Nyst}$.**
+**Randomised Nyström with rank-k truncation on $\tilde{A}_{Nyst}$.**
 
 Input $A \in \mathcal{R}^{mxn}$, $\Omega_1 \in \mathcal{R}^{nxl}$:
 
@@ -73,13 +73,13 @@ $$\hat{U}_k = Q U_k = C L^{-T} R^{-1} U_k = Z V_k \Sigma_k^{-1}$$
 
 in this case since $\Sigma_k$ is diagonal then $\Sigma_k \Sigma_k^{-1} = I$ and the last step reduce to simply evaluate: $\tilde{A}_{Nyst} = Z V_k (Z V_k)^T$.
 
-The **project** will be developed by using Algorithm 2 (Randomized Nyström with rank-k truncation on $\tilde{A}_{Nyst}$) and the two ways of writing $\hat{U}_k$ can be tested.
+The **project** will be developed by using Algorithm 2 (Randomised Nyström with rank-k truncation on $\tilde{A}_{Nyst}$) and the two ways of writing $\hat{U}_k$ can be tested.
 
 ## Sketching matrix
 
 Two sketching matrices will be used to test the algorithm. The first one is the **Gaussian embeddings**, the idea is to generate a matrix $\Omega_1 \in \mathbb{R}^{l \times m}$ from a Gaussian distribution with mean zero and unitary variance.
 
-The second sketching matrix is the **block SRHT embeddings**. It has been derived from the sub-sampled randomized Hadamard transform matrix:
+The second sketching matrix is the **block SRHT embeddings**. It has been derived from the sub-sampled randomised Hadamard transform matrix:
 
 $$\Omega_1 = \sqrt{\frac{m}{l}} P H D$$
 
@@ -122,5 +122,5 @@ $$\Omega_1 W = \sqrt{\frac{m}{Pl}} \sum_{i=1}^P \tilde{D}^{(i)} P H D^{(i)} W^{(
 ## References
 <a id="1">[1]</a> 
 Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor (2022). 
-'Block subsampled randomized Hadamard transform for low-rank approximation on distributed architectures'. 
+'Block subsampled randomised Hadamard transform for low-rank approximation on distributed architectures'. 
 $\textit{International Conference for Machine Learning}$.
