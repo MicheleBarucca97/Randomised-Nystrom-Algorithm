@@ -121,6 +121,6 @@ $$\Omega_1 W = \sqrt{\frac{m}{Pl}} \sum_{i=1}^P \tilde{D}^{(i)} P H D^{(i)} W^{(
 
 ## References
 <a id="1">[1]</a> 
-Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor. 
-Block subsampled randomized Hadamard transform for low-rank approximation on distributed architectures. 
-International Conference for Machine Learning, 2022.
+Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor (2022). 
+'Block subsampled randomized Hadamard transform for low-rank approximation on distributed architectures'. 
+\textit{International Conference for Machine Learning}.
