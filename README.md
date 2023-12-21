@@ -136,13 +136,14 @@ The previous dataset was chosen to make a comparison with the results coming fro
 The matrix used for testing was built through the following radial basis function:
 $e^{\frac{-||x_i - x_j||^2}{\sigma^2}}$
 
-The python class create_matrix.py contains other functions to create other matrices for the analysis of the Nyström algorithm. A description of those matrices can be found in the article from [[2]](#2).
+The python class create_matrix.py contains other functions to create other matrices for the analysis of the Nyström algorithm. A description of those matrices can be found in [[2]](#2).
 
 ## References
 <a id="1">[1]</a> 
 Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor (2022). 
 'Block subsampled randomised Hadamard transform for low-rank approximation on distributed architectures'. 
 $\textit{International Conference for Machine Learning}$.
+\\
 <a id="2">[2]</a> 
 Tropp, J. A. and Yurtsever, A. and Udell, M. and Cevher, V. (2017).
 'Fixed-rank approximation of a positive-semidefinite matrix from streaming data'.
