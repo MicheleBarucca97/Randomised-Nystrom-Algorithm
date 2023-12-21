@@ -119,6 +119,27 @@ Notice that the $ H $ matrix maintains orthogonality because overall it appears 
 
 $$\Omega_1 W = \sqrt{\frac{m}{Pl}} \sum_{i=1}^P \tilde{D}^{(i)} P H D^{(i)} W^{(i)}$$
 
+## Data set
+
+Two datasets were used to test the Nyström algorithm. The first one is the \verb|Modified NIST (MNIST)| dataset, which contains binary images of handwritten digits and was created by "re-mixing" the samples from NIST's original datasets. 
+
+The original black and white (bi-level) images were size normalized to fit in a 20x20 pixel box while preserving their aspect ratio. The normalized image is located in a 28×28 plane.
+
+The MNIST database contains 60,000 training images and 10,000 testing images. The MNIST dataset has images with pixel values in the range [0, 255]. It is considered the scaled one, so each feature is divided by 255 and now the range of values is between [0, 1].\\
+
+
+The second dataset \verb|YearPredictionMSD| is derived from the \verb|Million Song Dataset (MSD)|, which is an extensive compilation of audio features and metadata for a million contemporary popular music tracks, freely available for exploration. Many tasks can be addressed using the \verb|MSD|, in the dataset \verb|YearPredictionMSD| the focus is on year prediction. The meaning of 'year prediction' is related to estimating the year in which a song was released based on its audio features.
+
+The dataset contains songs that are mostly Western, commercial tracks ranging from 1922 to 2011, with a peak in the year 2000s. The dimension of the training set is 463,715 and the dimension of the testing set is 51,630. Each element contains 90 features: 12, the timbre average, and 78, the timbre covariance.
+
+The previous dataset was chosen to make a comparison with the results coming from the article \cite{balab}.
+The matrix used for testing was built through the following radial basis function:
+\begin{align}
+    e^{\frac{-||x_i - x_j||^2}{\sigma^2}}
+\end{align}
+
+The python class \verb|create_matrix.py| contains other functions to create other matrices for the analysis of the Nyström algorithm. A description of those matrices can be found in the article from \cite{matrices}.
+
 ## References
 <a id="1">[1]</a> 
 Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor (2022). 
