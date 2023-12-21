@@ -134,9 +134,7 @@ The dataset contains songs that are mostly Western, commercial tracks ranging fr
 
 The previous dataset was chosen to make a comparison with the results coming from the article [[1]](#1).
 The matrix used for testing was built through the following radial basis function:
-$$
-    e^{\frac{-||x_i - x_j||^2}{\sigma^2}}
-$$
+$e^{\frac{-||x_i - x_j||^2}{\sigma^2}}$
 
 The python class create_matrix.py contains other functions to create other matrices for the analysis of the Nyström algorithm. A description of those matrices can be found in the article from [[2]](#2).
 
