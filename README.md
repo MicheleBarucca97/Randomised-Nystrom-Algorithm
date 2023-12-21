@@ -10,7 +10,7 @@ where $(\Omega_1^T A \Omega_1)^+$ defines the pseudo-inverse of $\Omega_1^T A \O
 
 From Equation \ref{eq:nys} you can observe that the three terms can be defined by just doing the multiplication $C = A \Omega_1$ once. Since, the middle term is given by $\Omega_1^T C$, while the third term is the transpose of the first one.
 
-So, it is important to note that the randomised Nyström required just **one pass** over the original data $A$.
+So, it is important to note that the randomised Nyström required just **one pass** over the original data $A$. 
 
 Two aspects have to be taken into consideration:
 
