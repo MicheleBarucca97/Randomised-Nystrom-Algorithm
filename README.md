@@ -143,8 +143,9 @@ The python class create_matrix.py contains other functions to create other matri
 Balabanov, Oleg and Beaupère, Matthias and Grigori, Laura and Lederer, Victor (2022). 
 'Block subsampled randomised Hadamard transform for low-rank approximation on distributed architectures'. 
 $\textit{International Conference for Machine Learning}$.
-\\
+
+
 <a id="2">[2]</a> 
 Tropp, J. A. and Yurtsever, A. and Udell, M. and Cevher, V. (2017).
 'Fixed-rank approximation of a positive-semidefinite matrix from streaming data'.
-$\textit{Advances in Neural Information Processing Systems}$
+$\textit{Advances in Neural Information Processing Systems}$.
