@@ -1,9 +1,5 @@
 import numpy as np
-from numpy.linalg import norm, cholesky, solve, qr, svd, lstsq, inv
-from mpi4py import MPI
-
-# My classes
-from TSQR import TSQR
+from numpy.linalg import cholesky, qr, svd, lstsq, inv
 
 class randomized_nystrom:
 
